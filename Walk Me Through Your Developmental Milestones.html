@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walk Me Through My Developmental Milestones ♡</title>
+<style>
+:root{--pink:#ffd7e8;--pale:#fff2f7;--rose:#e98db5;--deep:#b95782;--text:#70445a;--white:#fffafd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pale);color:var(--text);font:17px/1.65 "Times New Roman",serif}
+h1,h2,h3,.script,.brand{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:normal}
+h1{font-size:clamp(2.5rem,7vw,4.8rem);line-height:1.05;margin:.3em 0}
+h2{font-size:2.7rem;margin:.2em 0}h3{font-size:1.9rem;margin:.2em 0}
+button,input,textarea,select{font:inherit;color:var(--text)}
+button{background:#fff;border:2px solid var(--rose);border-radius:24px;padding:.65rem 1rem;cursor:pointer;transition:.2s}
+button:hover{background:var(--pink);transform:translateY(-1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.top{position:sticky;top:0;z-index:4;background:#fffafde8;backdrop-filter:blur(8px);border-bottom:2px dashed var(--rose);padding:.65rem 1rem;display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap}
+.brand{font-size:1.5rem;color:var(--deep)}.top-actions{display:flex;gap:.4rem;flex-wrap:wrap}
+#editNotice{display:none;text-align:center;padding:.65rem;background:#ffe4ef;border-bottom:1px dashed var(--rose)}body.editing #editNotice{display:block}
+.hero{min-height:80vh;display:grid;place-items:center;padding:2rem 1rem;background:radial-gradient(circle at 15% 20%,#fff 0 6%,transparent 7%),radial-gradient(circle at 90% 75%,#ffe1ed 0 8%,transparent 9%)}
+.heroCard{width:min(900px,100%);text-align:center;padding:clamp(1.3rem,4vw,3rem);border:3px solid white;outline:2px dashed var(--rose);border-radius:35px;background:#ffffffdf;box-shadow:0 12px 35px #d86b9818}
+.ribbon{color:var(--rose);font-size:2.2rem}.kitty{margin:1rem auto;width:120px;height:100px;position:relative;background:white;border:3px solid #f4b1cd;border-radius:48% 48% 43% 43%;box-shadow:0 5px 0 #fbe0eb}
+.kitty:before,.kitty:after{content:"";position:absolute;top:-12px;width:38px;height:38px;background:white;border:3px solid #f4b1cd;transform:rotate(45deg);z-index:-1}.kitty:before{left:9px}.kitty:after{right:9px}
+.eye{position:absolute;top:39px;width:7px;height:11px;background:var(--text);border-radius:50%}.eye.l{left:31px}.eye.r{right:31px}.nose{position:absolute;top:51px;left:55px;width:8px;height:6px;background:#f5a2bf;border-radius:50%}.bowkitty{position:absolute;right:-12px;top:7px;color:#e77fac;font-size:2rem}
+.hero p{max-width:700px;margin:1rem auto}.musicrow{margin-top:1rem;padding:1rem;background:#fff2f8;border-radius:20px}
+main{max-width:1050px;margin:auto;padding:1rem}
+.intro{text-align:center;margin:2rem 0}.intro p{max-width:700px;margin:auto}
+.chapter{display:none;animation:fade .3s ease}.chapter.active{display:block}@keyframes fade{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:none}}
+.panel{background:var(--white);border:2px solid #f7c3d9;border-radius:28px;padding:clamp(1rem,3vw,2rem);margin:1rem 0;box-shadow:0 7px 18px #d86b9810}
+.panelhead{text-align:center;margin-bottom:1.2rem}.tag{display:inline-block;background:var(--pink);border-radius:30px;padding:.2rem .75rem;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+label{display:block;font-weight:bold;margin:.75rem 0 .25rem}
+textarea,input[type=text]{width:100%;border:1.5px solid #f1b4cf;border-radius:14px;background:#fff;padding:.75rem}
+textarea{min-height:95px;resize:vertical}input[type=text]{min-height:unset}
+.hint{font-size:.9rem;color:#94647a}.game{margin-top:1.3rem;padding:1rem;border:2px dashed var(--rose);border-radius:20px;background:#fff1f7}
+.game button{margin:.25rem}.feedback{font-weight:bold;min-height:1.5em;margin:.5rem 0}.gateMsg{color:var(--deep);font-weight:bold}
+.progresswrap{max-width:420px;margin:1rem auto}.progress{height:12px;border-radius:20px;background:#ffe3ee;overflow:hidden;border:1px solid #f2b6d0}.progress span{display:block;height:100%;width:0;background:var(--rose);transition:width .3s}
+.chapterNav{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1rem 0 2rem}.chapterNav button.current{background:var(--pink);font-weight:bold}.chapterNav button.done{border-style:solid;background:#fff0f6}
+.navrow{display:flex;justify-content:space-between;gap:1rem;margin:1.5rem 0}.timeline{border-left:3px dashed var(--rose);padding-left:1.5rem;margin-left:1rem}.timeitem{position:relative;margin:1.2rem 0}.timeitem:before{content:"♡";position:absolute;left:-2.15rem;background:var(--pale);color:var(--deep);font-size:1.4rem}
+footer{text-align:center;padding:2rem;background:#ffe2ee;border-top:2px dashed var(--rose)}
+[contenteditable=true]{outline:2px dashed #e98db5;outline-offset:3px;border-radius:4px}
+body:not(.editing) [contenteditable=true]{outline:none}
+@media(max-width:600px){.top{justify-content:center}.hero{min-height:65vh}.navrow button{max-width:48%}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">♡ My Milestone Diary ୨୧</div>
+  <div class="top-actions"><button id="editBtn">✎ Edit website</button><button id="saveBtn">♡ Save edits</button><button id="exportBtn">↓ Export HTML</button></div>
+</header>
+<div id="editNotice">✿ EDIT MODE ✿ Click outlined text to edit; type in the boxes to add your story. Save edits to keep them in this browser.</div>
+<section class="hero" id="home">
+ <div class="heroCard">
+  <div class="ribbon">୨୧ ♡ ୨୧</div>
+  <div class="kitty"><span class="eye l"></span><span class="eye r"></span><span class="nose"></span><span class="bowkitty">🎀</span></div>
+  <h1 contenteditable="false" data-edit>Walk Me Through<br>My Developmental Milestones</h1>
+  <p contenteditable="false" data-edit>Welcome to my little pink diary! Click through the chapters of my life, unlock each milestone with a tiny activity, and explore the experiences that helped shape the person I am becoming.</p>
+  <label for="nickname">My preferred name / nickname</label><input id="nickname" type="text" placeholder="Write your nickname…">
+  <div class="musicrow"><label for="musicFile">♪ Add music to my front page (optional)</label><input id="musicFile" type="file" accept="audio/*"><br><button id="musicBtn">▶ Play / Pause</button><audio id="music" loop></audio><p class="hint">Choose an audio file from your device. Press play to start; music will not autoplay.</p></div>
+  <p class="hint" contenteditable="false" data-edit>Developmental Psychology • Personal journey • Pampanga State University</p>
+  <button id="beginBtn">Start the journey ♡</button>
+ </div>
+</section>
+<main>
+<div class="intro"><h2 class="script">A life in little chapters</h2><p>Choose a chapter below. Each milestone has a mini-game, question, or puzzle to complete before the next chapter unlocks. Your memories are yours—share only what feels comfortable.</p>
+<div class="progresswrap"><div id="progressText">0 of 8 chapters unlocked</div><div class="progress"><span id="progressBar"></span></div></div></div>
+<nav class="chapterNav" id="chapterNav" aria-label="Milestone chapters"></nav>
+
+<section class="chapter active" data-ch="0">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 1 · Home</span><h2>Welcome to My Journey</h2></div>
+<h3 contenteditable="false" data-edit>A little introduction</h3><textarea data-edit placeholder="Introduce yourself and tell visitors what they will discover on this website."></textarea>
+<label>Representative photo or image (optional)</label><input type="file" accept="image/*" class="imageUpload"><div class="imagePreview"></div>
+<div class="game"><h3>🎀 Warm-up: Click to begin</h3><p>Ready to explore your developmental story?</p><button onclick="complete(0,'Yay! Chapter 1 complete. Choose My Beginning next. ♡')">I’m ready! ♡</button><div class="feedback" id="fb0"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="1">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 2 · Conception to 2 years</span><h2>My Beginning</h2><p>♡ Prenatal Development & Infancy ♡</p></div>
+<h3 contenteditable="false" data-edit>Little me, arriving in the world</h3>
+<label>Birth story or family information</label><textarea data-edit placeholder="Add details shared by family or records. If unknown, say that the details are unavailable—do not invent."></textarea>
+<label>Early physical milestones (sitting, crawling, standing, walking)</label><textarea data-edit placeholder="Write what you know and approximate ages, if available."></textarea>
+<label>Early language, attachment, and caregivers</label><textarea data-edit placeholder="First words, early bonding, or caregiver stories—only what you know and are comfortable sharing."></textarea>
+<label>Developmental analysis</label><textarea data-edit placeholder="How might early motor development or caregiver responsiveness relate to physical or psychosocial development?"></textarea>
+<div class="game"><h3>🍼 Mini game: Baby milestone check</h3><p>Which is an example of an early gross-motor milestone?</p><button onclick="wrong(1)">Recognizing a caregiver’s face</button><button onclick="correct(1,'Correct! Crawling is a gross-motor milestone. ♡')">Crawling</button><button onclick="wrong(1)">Writing an essay</button><div class="feedback" id="fb1"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="2">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 3 · Early & middle childhood</span><h2>My Childhood Years</h2><p>♡ Curious little explorer ♡</p></div>
+<label>School beginnings, learning, and skills</label><textarea data-edit placeholder="First school memories, learning to read/write, hobbies, or problem-solving experiences."></textarea>
+<label>Friendships, play, and family memories</label><textarea data-edit placeholder="Describe a meaningful memory or social experience."></textarea>
+<label>Confidence, independence, and changes in thinking</label><textarea data-edit placeholder="What experiences helped you become independent or shaped your confidence?"></textarea>
+<label>Developmental connection</label><textarea data-edit placeholder="Connect an experience to Piaget, Vygotsky, or another class concept. Explain, not just define."></textarea>
+<div class="game"><h3>🧩 Mini game: Choose the concept</h3><p>Piaget’s concrete operational stage is associated with…</p><button onclick="wrong(2)">Newborn reflexes only</button><button onclick="correct(2,'Correct! Logical thinking about concrete events is a feature of this stage. ♡')">Logical thinking about concrete objects and events</button><button onclick="wrong(2)">Fully abstract reasoning only</button><div class="feedback" id="fb2"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="3">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 4 · Adolescence</span><h2>My Teenage Years</h2><p>♡ Discovering myself ♡</p></div>
+<label>Physical, emotional, and cognitive changes</label><textarea data-edit placeholder="Share only changes you are comfortable discussing."></textarea>
+<label>Friendships, family, school, and peer influence</label><textarea data-edit placeholder="How did relationships and surroundings influence you?"></textarea>
+<label>Identity, values, independence, challenges, or achievements</label><textarea data-edit placeholder="Describe a turning point or how your values developed."></textarea>
+<label>Developmental connection</label><textarea data-edit placeholder="Connect your experience to Erikson’s Identity vs. Role Confusion or another theory."></textarea>
+<div class="game"><h3>💗 Question & answer</h3><p>In Erikson’s theory, the central psychosocial task of adolescence is…</p><button onclick="correct(3,'Correct! Adolescents explore who they are and their sense of identity. ♡')">Identity vs. Role Confusion</button><button onclick="wrong(3)">Trust vs. Mistrust</button><button onclick="wrong(3)">Integrity vs. Despair</button><div class="feedback" id="fb3"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="4">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 5 · Current stage</span><h2>My Present Self</h2><p>♡ The person I am today ♡</p></div>
+<label>Academic and personal accomplishments</label><textarea data-edit placeholder="What are you proud of?"></textarea>
+<label>Responsibilities, relationships, values, and identity</label><textarea data-edit placeholder="How are you changing and growing in your current stage?"></textarea>
+<label>Career interests, future plans, challenges, and coping</label><textarea data-edit placeholder="What are you working toward, and how do you cope with challenges?"></textarea>
+<label>What I am learning about myself</label><textarea data-edit placeholder="Reflect on your physical, cognitive, emotional, and social development."></textarea>
+<div class="game"><h3>🎀 Tiny puzzle: Fill in the blank</h3><p>Development is influenced by the person and their ______.</p><input id="puzzle4" type="text" placeholder="Your answer"><button onclick="puzzle(4)">Check answer</button><div class="feedback" id="fb4"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="5">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 6 · Theory room</span><h2>Connecting My Experiences to Theories</h2><p>♡ Aim to apply at least three theories for the highest rubric band ♡</p></div>
+<div class="grid">
+<div><h3 contenteditable="false" data-edit>1. Erikson’s Psychosocial Theory</h3><label>Brief explanation</label><textarea data-edit placeholder="Explain a relevant psychosocial stage and its task."></textarea><label>Personal experience</label><textarea data-edit placeholder="Describe an experience that illustrates it."></textarea><label>Analysis: how does the theory help?</label><textarea data-edit placeholder="Interpret the experience through the theory."></textarea></div>
+<div><h3 contenteditable="false" data-edit>2. Piaget’s Cognitive Developmental Theory</h3><label>Brief explanation</label><textarea data-edit placeholder="Explain a relevant cognitive stage or concept."></textarea><label>Personal experience</label><textarea data-edit placeholder="Describe a learning, thinking, or problem-solving experience."></textarea><label>Analysis: how does the theory help?</label><textarea data-edit placeholder="Interpret the experience through the theory."></textarea></div>
+<div><h3 contenteditable="false" data-edit>3. Bronfenbrenner’s Ecological Systems Theory</h3><label>Brief explanation</label><textarea data-edit placeholder="Explain how environmental systems influence development."></textarea><label>Personal experience</label><textarea data-edit placeholder="Consider family, school, peers, community, culture, or broader factors."></textarea><label>Analysis: how does the theory help?</label><textarea data-edit placeholder="Explain how these environments shaped your development."></textarea></div>
+</div>
+<label>APA 7th edition references</label><textarea data-edit placeholder="Enter accurate full APA references for the textbook and sources you used. Check details rather than guessing."></textarea>
+<div class="game"><h3>🧠 Theory quiz</h3><p>Which theory focuses on environmental systems surrounding a developing person?</p><button onclick="correct(5,'Correct! Bronfenbrenner emphasizes interacting environmental systems. ♡')">Bronfenbrenner’s Ecological Systems Theory</button><button onclick="wrong(5)">Piaget’s Cognitive Developmental Theory</button><button onclick="wrong(5)">Erikson’s Psychosocial Theory</button><div class="feedback" id="fb5"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="6">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 7 · Interactive timeline</span><h2>My Developmental Timeline</h2><p>♡ Add milestone cards in chronological order ♡</p></div>
+<div class="timeline" id="timeline">
+<div class="timeitem"><h3 contenteditable="false" data-edit>Age / Year: ______ · A little milestone</h3><textarea data-edit placeholder="What happened? Add why it mattered to you."></textarea><label>Photo or illustration (optional)</label><input type="file" accept="image/*" class="imageUpload"><div class="imagePreview"></div></div>
+</div><button id="addTimeline">＋ Add timeline milestone</button>
+<div class="game"><h3>🧩 Timeline puzzle</h3><p>Put the life stages in order from earliest to latest.</p><select id="timelineAnswer"><option value="">Choose the order…</option><option value="wrong">Adolescence → Infancy → Childhood → Present</option><option value="right">Infancy → Childhood → Adolescence → Present</option><option value="wrong">Present → Childhood → Infancy → Adolescence</option></select><button onclick="checkTimeline()">Check order</button><div class="feedback" id="fb6"></div></div></div>
+</section>
+
+<section class="chapter" data-ch="7">
+<div class="panel"><div class="panelhead"><span class="tag">Chapter 8 · Final reflection</span><h2>The Person I Am Becoming</h2><p>♡ A thoughtful look back and forward ♡</p></div>
+<label>Which developmental milestone has had the greatest impact on who you are today?</label><textarea data-edit placeholder="Reflect and explain why it mattered."></textarea>
+<label>What people, experiences, or environmental factors influenced you most?</label><textarea data-edit placeholder="Explain the influence of important relationships and contexts."></textarea>
+<label>How have you changed physically, cognitively, emotionally, and socially?</label><textarea data-edit placeholder="Compare your development across time."></textarea>
+<label>What have you learned about yourself through this project?</label><textarea data-edit placeholder="Share your self-understanding."></textarea>
+<label>What kind of person do you hope to become?</label><textarea data-edit placeholder="Describe your hopes and future goals."></textarea>
+<div class="game"><h3>🎀 Final heart check</h3><p>Have you written a reflection that explains your growth and future hopes?</p><button onclick="complete(7,'You completed the journey! Thank you for walking through your milestones. ♡')">Yes, my reflection is ready! ♡</button><div class="feedback" id="fb7"></div></div></div>
+</section>
+
+<div class="navrow"><button id="prevBtn">← Previous chapter</button><button id="nextBtn">Next chapter →</button></div>
+</main>
+<footer><div class="ribbon">୨୧ ♡ ୨୧</div><p contenteditable="false" data-edit>My development is a story still unfolding. Thank you for visiting my pink little world. ♡</p><p class="hint">Remember to add your own experiences, cite your sources in APA 7th edition, and test your website before submitting.</p></footer>
+<script>
+const chapters=[...document.querySelectorAll('.chapter')], nav=document.getElementById('chapterNav');
+const names=['Home','My Beginning','Childhood','Teen Years','Present Self','Theories','Timeline','Reflection'];
+let unlocked=JSON.parse(localStorage.getItem('milestoneUnlocked')||'[true,false,false,false,false,false,false,false]'), current=0, editing=false;
+function renderNav(){nav.innerHTML='';names.forEach((name,i)=>{let b=document.createElement('button');b.textContent=(unlocked[i]?'♡ ':'🔒 ')+name;b.disabled=!unlocked[i];b.className=(i===current?'current ':'')+(unlocked[i]&&i<current?'done':'');b.onclick=()=>show(i);nav.appendChild(b)});let count=unlocked.filter(Boolean).length;document.getElementById('progressText').textContent=count+' of 8 chapters unlocked';document.getElementById('progressBar').style.width=(count/8*100)+'%';document.getElementById('prevBtn').disabled=current===0;document.getElementById('nextBtn').disabled=current===7||!unlocked[current+1];document.getElementById('nextBtn').textContent=current===7?'Journey complete ♡':'Next chapter →'}
+function show(i){if(!unlocked[i])return;current=i;chapters.forEach((c,j)=>c.classList.toggle('active',j===i));renderNav();window.scrollTo({top:document.querySelector('.chapterNav').offsetTop-75,behavior:'smooth'})}
+function complete(i,msg){unlocked[i]=true;localStorage.setItem('milestoneUnlocked',JSON.stringify(unlocked));document.getElementById('fb'+i).textContent=msg;renderNav();if(i<7){unlocked[i+1]=true;localStorage.setItem('milestoneUnlocked',JSON.stringify(unlocked));renderNav();setTimeout(()=>show(i+1),700)}}
+function correct(i,msg){complete(i,msg)}function wrong(i){document.getElementById('fb'+i).textContent='Not quite! Try again, you can do it. ♡'}
+function puzzle(i){let v=document.getElementById('puzzle'+i).value.trim().toLowerCase();if(['environment','environmental context','surroundings','environment'].includes(v))correct(i,'Correct! Our surroundings are part of development. ♡');else wrong(i)}
+function checkTimeline(){if(document.getElementById('timelineAnswer').value==='right')correct(6,'Correct order! Infancy → Childhood → Adolescence → Present. ♡');else wrong(6)}
+document.getElementById('beginBtn').onclick=()=>{unlocked[1]=true;localStorage.setItem('milestoneUnlocked',JSON.stringify(unlocked));show(1)};
+document.getElementById('prevBtn').onclick=()=>show(Math.max(0,current-1));document.getElementById('nextBtn').onclick=()=>{if(unlocked[current+1])show(current+1)};
+document.getElementById('editBtn').onclick=()=>{editing=!editing;document.body.classList.toggle('editing',editing);document.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable=editing?'true':'false');document.getElementById('editBtn').textContent=editing?'✓ Finish editing':'✎ Edit website'};
+function save(){let fields=[...document.querySelectorAll('[data-edit],textarea,input[type=text]')].map(el=>({key:el.dataset.saveKey||(el.dataset.saveKey='k'+Math.random().toString(36).slice(2)),value:el.value!==undefined?el.value:el.innerHTML}));let data={fields,unlocked};localStorage.setItem('milestoneEdits',JSON.stringify(data));alert('Your edits are saved in this browser! ♡')}
+document.getElementById('saveBtn').onclick=save;
+
+document.getElementById('exportBtn').onclick=()=>{let clone=document.documentElement.cloneNode(true);clone.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable='false');let blob=new Blob(['<!doctype html>\\n'+clone.outerHTML],{type:'text/html'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='my-developmental-milestones.html';a.click();URL.revokeObjectURL(a.href)};
+document.getElementById('musicFile').onchange=e=>{let f=e.target.files[0];if(f)document.getElementById('music').src=URL.createObjectURL(f)};
+document.getElementById('musicBtn').onclick=()=>{let a=document.getElementById('music');if(!a.src){alert('Choose a music file first ♡');return}if(a.paused)a.play();else a.pause()};
+document.getElementById('addTimeline').onclick=()=>{let item=document.createElement('div');item.className='timeitem';item.innerHTML='<h3 contenteditable="'+editing+'" data-edit>Age / Year: ______ · New milestone</h3><textarea data-edit placeholder="What happened? Why was it significant?"></textarea><label>Photo or illustration (optional)</label><input type="file" accept="image/*" class="imageUpload"><div class="imagePreview"></div>';document.getElementById('timeline').appendChild(item);if(editing)item.querySelectorAll('[data-edit]').forEach(x=>x.contentEditable='true')};
+document.addEventListener('change',e=>{if(e.target.classList.contains('imageUpload')){let f=e.target.files[0];if(f){let img=document.createElement('img');img.src=URL.createObjectURL(f);img.style.cssText='max-width:100%;max-height:300px;border-radius:18px;margin:.7rem 0';e.target.nextElementSibling.replaceChildren(img)}}});
+let saved=localStorage.getItem('milestoneEdits');if(saved){try{let d=JSON.parse(saved);if(d.fields){let els=[...document.querySelectorAll('[data-edit],textarea,input[type=text]')];d.fields.forEach(f=>{let el=els.find(x=>x.dataset.saveKey===f.key);if(el){if(el.value!==undefined)el.value=f.value;else el.innerHTML=f.value}});if(d.unlocked)unlocked=d.unlocked}}catch(e){}}
+renderNav();
+</script>
+</body>
+</html>
